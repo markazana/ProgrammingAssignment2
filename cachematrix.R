@@ -1,12 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions to store and find the inverse of  
+## a square matrix.
 
-## Write a short comment describing this function
+## creates a special vector that contains functions to 
+## get/set value of vector
+## get/set inverse if matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-	## creates a special vector that contains functions to 
-	## get/set value of vector
-	## get/set inverse if matrix
 	i <- NULL
 	set <- function(y) {
 	x <<- y
@@ -21,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Solves the square matrix of the special "vector" 
+## created with the above function
 
 cacheSolve <- function(x, ...) {
 	## Return a matrix that is the inverse of 'x'
